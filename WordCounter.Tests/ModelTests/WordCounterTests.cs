@@ -12,9 +12,9 @@ namespace WordCounter.Tests
     public void TestWordFinderFunction()
     {  
        
-      string userInput = "Scrabble";
-      int testScore = 14;
-      Assert.AreEqual(testScore, Scrabble.ScrabbleCalc(userInput));
+      string userPhrase = "Buffalo buffalo buffalo Buffalo buffalo.";
+      int wordsFound = 5;
+      Assert.AreEqual(wordsFound, WordCounter.WordFinder(userPhrase));
 
     }
 

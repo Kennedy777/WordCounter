@@ -19,7 +19,7 @@ Initial tests will confirm that given word, in its integrality (i.e., not a with
 
 ## Setup/Installation Requirements
 
-
+The repositiory for this project can be found at : https://github.com/Kennedy777/WordCounter
 
 
 ## Known Bugs

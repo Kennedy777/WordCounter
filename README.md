@@ -2,21 +2,24 @@
 
 #### A C-sharp program: part one
 
-#### By **Marguerite Kennedy**
-April 26, 2019
+#### By **Marguerite Kennedy, April 26, 2019**
 
 ## Description
 
 This is the first stage in a two-stage project to create a "word counter" program, as the first independent project for the first two weeks of the Epicodus C# curriculum. 
 
-The program will prompt the user for a word AND, separately, a sentence. It will then check to see how often the initial word appears in the sentence. This only applies to words *in their entirety,* so letters of a word embedded in other words (e.g., if the user's word is "car," "carpet" will not be counted).
+The program will prompt the user for a "search word" AND, separately, a sentence or phrase. It will then check to see how often the initial word appears in the sentence. This only applies to words *in their entirety,* so letters of a word embedded in other words (e.g., if the user's search word is "car," "carpet" will not be counted).
 
-The initial (current, as of 4/26/19) phase will invovle creating tests and building out logic. The next phase will invovle creating the user interface.
+The initial (current, as of 4/26/19) phase will invovle creating tests and building out logic. The next phase will invovle creating the front-end logic and user interface.
 
-### Specs 
+## Specs 
 
+Initial tests will determine how many times a word, in its integrality (i.e., not a within a longer word), appear in a phrase. 
 
-Initial tests will confirm that given word, in its integrality (i.e., not a within a longer word), in a phrase. 
+Let's say a user's search word is "buffalo," and their sentence is, "Buffalo buffalo buffalo Buffalo buffalo" (fun fact: that is the longest sentence using only one word, albeit with differnet meanings in each instance, in the English language!).
+
+With this input, we'd expect that the the program will find five (5) instances of the word, and output that to the user. 
+
 
 The first test will be designed to "successfully fail" by submitting a test argument that is a word NOT appearing in the test string. 
 
@@ -24,15 +27,15 @@ The first test will be designed to "successfully fail" by submitting a test argu
 
 The repositiory for this project can be found at : https://github.com/Kennedy777/WordCounter
 
+This phase is not on Github pages since there's no user interface yet. 
 
 ## Known Bugs
-* 
+* None currently known. 
 
-## Technologies Used
-  * 
-  * 
-  * 
-  * 
+## Technologies Used (in initial phase)
+  * C# 
+  * .NET framework
+  * MSTest
 
 ## Support and contact details
 
@@ -42,4 +45,4 @@ _Email me at reach.marguerite@gmail.com with any questions, comments, or concern
 
 *This software is licensed under the MIT license*
 
-Copyright (c) 2019 ** Marguerite Kennedy **
+Copyright (c) 2019 Marguerite Kennedy

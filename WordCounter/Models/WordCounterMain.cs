@@ -31,15 +31,17 @@ namespace WordCounter
     }
 
     public static int CountWords (string keyWord, string userPhrase) 
-        string[] splitUserPhrase = userPhrase.Split();
+    {
+        string[] splitUserPhrase = userPhrase.Split(" ");
         int wordCount=0;
         foreach(var word in splitUserPhrase)
         {
-            if (word.ToLower()== keyWord.ToLower())
+        if (word.ToLower()== keyWord.ToLower())
             {
                 wordCount++;
             }
         }
-      return wordCount;
-     }
+        return wordCount;
+        }
+    } 
  } 

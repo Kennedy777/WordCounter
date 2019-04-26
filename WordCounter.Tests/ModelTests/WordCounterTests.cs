@@ -3,21 +3,22 @@ using WordCounter.Solution;
 using System.Collections.Generic;
 using WordCounter.Models;
 
-namespace WordCounter.Tests
+namespace WordCounter.Models.Tests
 {
   [TestClass]
   public class WordCounterTest
   {
+      
     [TestMethod]
-    public void TestWordFinderFunction()
+    public void WordCount_FindWordsinString_5()
     {  
-       
-      string userPhrase = "Buffalo buffalo buffalo Buffalo buffalo.";
-      int wordsFound = 5;
-      Assert.AreEqual(wordsFound, WordCounter.WordFinder(userPhrase));
-
+       Assert.AreEqual(5, WordCounter.CountWords("buffalo", "Buffalo buffalo buffalo Buffalo buffalo."));
     }
 
-
+    [TestMethod]
+    public void WordCount_FindWordsInStringWithCommas_2()
+    {
+       Assert.AreEqual(2, WordCounter.CountWords("cats", "Some cats are good, others are not cats.");        )
+    }
   }
 }

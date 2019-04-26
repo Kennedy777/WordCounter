@@ -15,7 +15,10 @@ The initial (current, as of 4/26/19) phase will invovle creating tests and build
 
 ### Specs 
 
-Initial tests will confirm that given word, in its integrality (i.e., not a within a longer word), in a phrase. The first test will be designed to "successfully fail" by submitting a test argument that is a word NOT appearing in the test string. 
+
+Initial tests will confirm that given word, in its integrality (i.e., not a within a longer word), in a phrase. 
+
+The first test will be designed to "successfully fail" by submitting a test argument that is a word NOT appearing in the test string. 
 
 ## Setup/Installation Requirements
 

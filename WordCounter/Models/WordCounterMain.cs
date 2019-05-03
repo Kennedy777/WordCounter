@@ -1,6 +1,5 @@
-using System.Collections.Generic;
 using System;
-using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace WordCounter.Models
 {
@@ -10,11 +9,11 @@ namespace WordCounter.Models
    private string _keyWord;
    private int _wordCount;   
   }
-   public WordFinder(string userPhrase, string keyWord, int wordCount) 
+   public WordModel(string userPhrase, string keyWord, int wordCount) 
      {
          _userPhrase = userPhrase;
          _keyWord = keyWord;
-         _wordCount = WordCount; 
+         _wordCount = wordCount; 
      }
 
     public string FindKeyWord()

@@ -1,6 +1,6 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WordCounter.Solution;
+using System;
 using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
 
 namespace WordCounter.Models.Tests

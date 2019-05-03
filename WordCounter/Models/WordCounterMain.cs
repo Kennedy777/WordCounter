@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WordCounter
+namespace WordCounter.Models
 {
-  public class WordCount
+  public class WordModel
   {
    private string _userPhrase;
    private string _keyWord;

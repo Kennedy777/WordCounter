@@ -6,8 +6,8 @@
 
 	<h1>And the answer is...</h1>
 
-	<p>Search Word: @Model.GetKeyWord()</p>
-	<p>Phrase: @Model.GetPhrase()</p>
-	<p>Your word appears @Model.GetCount() times in the phrase. Cool, right?</p>
-	<a href="/"><button class="btn btn-info" type="button" name="back-button">Return</button></a>
+	<p>Your word: @Model.FindKeyWord()</p>
+	<p>Your phrase: @Model.GetPhrase()</p>
+	<p>Your word appears @Model.GetWords() times in the phrase. Cool, right?</p>
+	<a href="/"><button class="btn btn-info" type="button" name="back-button">Try it again!</button></a>
 </div>

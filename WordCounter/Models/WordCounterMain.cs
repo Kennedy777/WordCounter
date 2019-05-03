@@ -20,11 +20,11 @@ namespace WordCounter.Models
     {
         return _keyWord;
     }
-    public string FindUserPhrase()
+    public string GetPhrase()
     {
         return _userPhrase;
     }   
-    public int KeyWordsFound()
+    public int GetWords()
     {
         return _wordCount;
     }

@@ -1,8 +1,8 @@
 # Word Counter
 
-#### A C-sharp program: part one
+#### A C-sharp program: Two-Part Independent Project
 
-#### By **Marguerite Kennedy, April 26, 2019**
+#### By **Marguerite Kennedy, revised May 3, 2019**
 
 ## Description
 
@@ -10,7 +10,9 @@ This is the first stage in a two-stage project to create a "word counter" progra
 
 The program will prompt the user for a "search word" AND, separately, a sentence or phrase. It will then check to see how often the initial word appears in the sentence. This only applies to words *in their entirety,* so letters of a word embedded in other words (e.g., if the user's search word is "car," "carpet" will not be counted).
 
-The initial (current, as of 4/26/19) phase will invovle creating tests and building out logic. The next phase will invovle creating the front-end logic and user interface.
+The initial (4/26/19) phase will invovle creating tests and building out initial game logic. 
+
+For the second (5/3/19) phase, MVC logic is built out, creating a splash page that allows the user to navigae to the "Word Counter" game.
 
 ## Specs 
 
@@ -18,10 +20,9 @@ Initial tests will determine how many times a word, in its integrality (i.e., no
 
 Let's say a user's search word is "buffalo," and their sentence is, "Buffalo buffalo buffalo Buffalo buffalo" (fun fact: that is the longest sentence using only one word, albeit with differnet meanings in each instance, in the English language!).
 
-With this input, we'd expect that the the program will find five (5) instances of the word, and output that to the user. 
+With this input, we'd expect that the the program will find five (5) instances of the word, and output that to the user. The first test will be designed to "successfully fail" by submitting a test argument that is a word NOT appearing in the test string. 
 
-
-The first test will be designed to "successfully fail" by submitting a test argument that is a word NOT appearing in the test string. 
+In the second phase of buildout, MVC and user interface added using CSS (Bootstrap and original CSS stylesheet) and JavaScript. 
 
 ## Setup/Installation Requirements
 

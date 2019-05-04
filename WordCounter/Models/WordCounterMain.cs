@@ -8,7 +8,7 @@ namespace WordCounter.Models
    private string _userPhrase;
    private string _keyWord;
    private int _wordCount;   
-  }
+  
    public WordModel(string userPhrase, string keyWord, int wordCount) 
      {
          _userPhrase = userPhrase;

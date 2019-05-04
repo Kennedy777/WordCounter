@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -12,7 +13,7 @@ namespace WordCounter
             var builder = new ConfigurationBuilder()
             .SetBasePath(env.ContentRootPath)
             .AddEnvironmentVariables();
-              Configuration = builder.Build();
+          Configuration = builder.Build();
         }
 
         public IConfigurationRoot Configuration { get; }
@@ -32,6 +33,11 @@ namespace WordCounter
               name: "default",
               template: "{controller=Home}/{action=Index}/{id?}");
           });
+
+           app.Run(async (context) =>
+           {
+            await context.Response.WriteAsync("D'oh! Something went wrong!");
+           });
         }
     }
 }

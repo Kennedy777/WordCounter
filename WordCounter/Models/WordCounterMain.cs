@@ -41,6 +41,6 @@ namespace WordCounter.Models
             }
         }
         return wordCount;
-        }
-    } 
+     }
+   } 
  } 

@@ -22,19 +22,27 @@ Let's say a user's search word is "buffalo," and their sentence is, "Buffalo buf
 
 With this input, we'd expect that the the program will find five (5) instances of the word, and output that to the user. The first test will be designed to "successfully fail" by submitting a test argument that is a word NOT appearing in the test string. 
 
-In the second phase of buildout, MVC and user interface added using CSS (Bootstrap and original CSS stylesheet) and JavaScript. 
+In the second phase of buildout, MVC and user interface added using CSS (Bootstrap and original CSS stylesheet).
 
 ## Setup/Installation Requirements
 
-The repositiory for this project can be found at : https://github.com/Kennedy777/WordCounter
+Download .NET Core 2.2.103 SDK install it. Download Mono and install it.
 
-This phase is not on Github pages since there's no user interface yet. 
+Clone this repository: $ https://github.com/Kennedy777/WordCounter
+Change into the work directory:: $ cd WordCounter.Solution
+To edit the project, open the project in your preferred text editor.
+
+To run the program, navigate to WordCounter.cs file then compile and execute: $ cd WordCounter/Models $ mcs WordCounter.cs; mono WordCounter.exe;
+
+To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test
+
 
 ## Known Bugs
 * None currently known. 
 
 ## Technologies Used (in initial phase)
   * C# 
+  * Bootstrap
   * .NET framework
   * MSTest
 

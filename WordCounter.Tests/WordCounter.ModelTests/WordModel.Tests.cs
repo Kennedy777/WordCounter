@@ -11,15 +11,21 @@ namespace WordCounter.Models.Tests
   {
       
     [TestMethod]
-    public void WordCount_FindWordsinString_5()
-    {  
+      public void WordCount_FindWordsinString_5()
+      {  
        Assert.AreEqual(5, WordModel.CountWords("buffalo", "Buffalo buffalo buffalo Buffalo buffalo"));
-    }
+       }
 
     [TestMethod]
-    public void WordCount_FindWordsInStringWithCommas_2()
-    {
+       public void WordCount_FindWordsInStringWithCommas_2()
+       {
        Assert.AreEqual(2, WordModel.CountWords("cats", "Some cats are good, others are not cats"));        
-    }
+       }
+
+    [TestMethod]
+     public void WordCount_FindTwoWordsInStringWithCaps_2()
+        {
+            Assert.AreEqual(2, WordModel.CountWords("Cat", "Cat is a nice cat"));
+        } 
   }
 }

@@ -16,7 +16,7 @@ namespace WordCounter.Models
          _wordCount = wordCount; 
      }
 
-    public string FindKeyWord()
+    public string GetKeyWord()
     {
         return _keyWord;
     }

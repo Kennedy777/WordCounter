@@ -12,10 +12,16 @@ namespace WordCounter.Controllers
         {
             return View();
         }
-        [HttpPost("/checkword")]
-        public ActionResult CheckWord()
+    
+     [HttpPost("/checkword")]
+     public ActionResult CheckWord()
         {
-            return View();
-        }
+            string keyWord = Request.Form["word"];
+            string userPhrase = Request.Form["phrase"];
+            int count = WordModel.CountWords(keyWord, userPhrase);
+
+            WordModel Model = new WordModel(keyWord, userPhrase, count);
+
+            return View(Model);    
     }
 }

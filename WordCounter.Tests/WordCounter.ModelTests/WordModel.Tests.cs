@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WordCounter.Models;
-// using System.Web.Mvc;
 
 namespace WordCounter.Models.Tests
 {

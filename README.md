@@ -36,7 +36,6 @@ To run the program, navigate to WordCounter.cs file then compile and execute: $ 
 
 To run the tests, use these commands: $ cd WordCounter.Tests $ dotnet test
 
-
 ## Known Bugs
 * None currently known. 
 
